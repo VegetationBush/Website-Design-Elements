@@ -12,10 +12,18 @@
   0 1px 2px #00000030,
   0 2px 4px #00000015;
 
+  --shadow-negative:
+  inset 0 1px 4px #00000015,
+  0 1px 2px #00000030,
+  inset 0 -1px 2px #ffffff30;
 }
 
-.widget {
+.frame {
   background-color: var(--bg-dark);
   box-shadow: var(--shadow-base);
-  border-radius: 20px;
+}
+
+.frame-negative {
+  background-color: var(--bg-dark);
+  box-shadow: var(--shadow-negative);
 }
