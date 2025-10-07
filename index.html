@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Website Design Elements</title>
+        <style>
+            body {
+               background-color: rgb(0, 0, 0); /* sets the page background */
+            }
+        </style>
+        <link rel="stylesheet" href="style/depth.css">
 	</head>
 	<body>
-		<div class="widget">
-			<h2>My Widget</h2>
-			<p>This is a widget with rounded corners and a drop shadow.</p>
+		<div class="widget" style="
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            border-radius: 30px;
+            background-color: oklch(20.904% 0.00002 271.152);
+            ">
+            <div class="widget" style="
+                width:calc(100% - 20px);
+                height:calc(100% - 20px);
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background-color: oklch(33.68% 0.00004 271.152);
+            ">
+            <img src="svg/search.svg" alt="search" style="position:absolute; top:6px; left:10px; width:16px; height:16px;">
+		</div>
+	</body>
 		</div>
 	</body>
 </html>
