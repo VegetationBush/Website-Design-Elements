@@ -1,29 +1,11 @@
-:root {
-  --primary: oklch(0.9 0.17 100);
-  --bg-dark: oklch(0.1 0 264);
-  --bg: oklch(0.2 0 264);
-  --bg-light: oklch(0.3 0 264);
-
-  --text: oklch(0.76 0 264);
-  --text-muted: oklch(0.76 0 264);
-
-  --shadow-base:
-  inset 0 1px 2px #ffffff30,
+.frame {
+  box-shadow: inset 0 1px 2px #ffffff30,
   0 1px 2px #00000030,
   0 2px 4px #00000015;
-
-  --shadow-negative:
-  inset 0 -1px 2px #ffffff30,
-  inset 0 1px 2px #00000030,
-  0 -1px 2px #00000015;
-}
-
-.frame {
-  box-shadow: var(--shadow-base);
-  transition: all 0.3 ease-out;
 }
 
 .frame-negative {
-  box-shadow: var(--shadow-negative);
-  transition: all 0.3 ease-out;
+  box-shadow: inset 0 -1px 2px #ffffff30,
+  inset 0 1px 2px #00000030,
+  0 -1px 2px #00000015;
 }
