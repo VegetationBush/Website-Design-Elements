@@ -19,7 +19,3 @@
   box-shadow: var(--shadow-base);
   border-radius: 20px;
 }
-
-.widget:hover {
-  background-color: var(--bg-light);
-}
