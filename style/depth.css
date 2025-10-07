@@ -13,17 +13,17 @@
   0 2px 4px #00000015;
 
   --shadow-negative:
-  inset 0 1px 4px #00000015,
-  0 1px 2px #00000030,
-  inset 0 -1px 2px #ffffff30;
+  inset 0 -1px 2px #ffffff30,
+  inset 0 1px 2px #00000030,
+  0 -1px 2px #00000015;
 }
 
 .frame {
-  background-color: var(--bg-dark);
   box-shadow: var(--shadow-base);
+  transition: all 0.3 ease-out;
 }
 
 .frame-negative {
-  background-color: var(--bg-dark);
   box-shadow: var(--shadow-negative);
+  transition: all 0.3 ease-out;
 }
